@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+body{
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+                   /* Project css */
+
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: #c7b198;
+    color: #5c5470;
+    /* color: #596e79; */
+}
+.heading{
+    font-size: 2rem;
+}
+.legend{
+    width: 18rem;
+    height: 4rem;
+    background-color: #eef2e2;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding:  0.5rem;
+}
+.legend-seat-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+p{
+    color: #534a69;
+    font-size: 1rem;
+}
+span{
+    color: #38314a;
+    font-weight: 500;
+}
+.seats svg{
+    width: 1.8rem;
+    height: 1.8rem;
+    transition: all 0.5s ease-in-out;
+}
+.seats-container .seats svg:hover{
+    cursor: pointer;
+    margin-top: -7px;
+}
+.movie-container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 600;
+}
+#movie{
+    padding: .25rem;
+    background-color:#eef2e2;
+    border: 2px solid  #5c5470;
+    border-radius: 5px;
+    color: #5c5470;
+    font-weight: 550;
+    cursor: pointer;
+}
+.screen-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .7rem;
+}
+.screen{
+    width: 24rem;
+    height: 6rem;   /*10rem---for image-slider*/
+    background-color: #f1f1f0;
+    border: 8px solid #808080;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    color: #808080;
+}
+
+.seats-container .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.seats .selected{
+    fill: #005792;
+}
+.seats .booked{
+    fill: #808080;
+}
+.seats-container .seats .booked:hover{
+    cursor: default;
+    margin-top: 0;
+}
+.seat-count,.amount{
+    font-weight: 700;
+}
